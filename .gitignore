@@ -1,0 +1,5 @@
+.env
+.idea/dataSources.local.xml
+.idea/
+node_modules/
+vendor/
