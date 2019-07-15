@@ -14,7 +14,7 @@
                         <a href="/" class="nav-link">Главная</a>
                     </li>
                     <li class="nav-item {{ Request::is('services') ? 'active' : '' }}">
-                        <a href="/services" class="nav-link">Услуги</a>
+                        <a href="/services" class="nav-link">Прайс лист</a>
                     </li>
                     <li class="nav-item {{ Request::is('contacts') ? 'active' : '' }}">
                         <a href="/contacts" class="nav-link">Контакты</a>
