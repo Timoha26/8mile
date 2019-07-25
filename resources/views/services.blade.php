@@ -1,22 +1,31 @@
 @extends('app')
 @section('title', '- Услуги')
 @section('content')
-    <div class="view full-page-intro main">
+    <div class="view full-page-intro main main-dinamic">
         <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 mt-4 white-text text-center text-md-center">
+                    <div class="col-md-6 white-text text-center d-none d-lg-block">
                         <h1 class="fontweight-bold">Заказ Газели</h1>
                         <hr class="hr-light">
                         <h3 class="fontweight-bold">+7-902-755-03-30</h3>
                         <hr class="hr-light">
                         <h3 class="fontweight-bold">59-03-30</h3>
                     </div>
-                    <div class="col-md-6 col-xl-5 mb-4">
+                    <div class="col-md-6 col-xl-5 mb-4 d-none d-lg-block">
                         <div class="card">
                             <div class="card-body text-left">
                                 @include('layouts.order_form')
                             </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 mt-3 white-text text-center d-lg-none">
+                        <h3>Заказ газели</h3>
+                        <p>+7-902-755-03-30, 59-03-30</p>
+                    </div>
+                    <div class="col-sm-4 mt-3 d-lg-none">
+                        <div class="text-center">
+                            <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModal">Заказать</button>
                         </div>
                     </div>
                 </div>

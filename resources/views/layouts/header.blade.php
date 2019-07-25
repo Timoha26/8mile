@@ -19,9 +19,9 @@
                     <li class="nav-item {{ Request::is('contacts') ? 'active' : '' }}">
                         <a href="/contacts" class="nav-link">Контакты</a>
                     </li>
-                    <li class="nav-item {{ Request::is('orders') ? 'active' : '' }}">
-                        <a href="/orders" class="nav-link">Заказы</a>
-                    </li>
+                    <!--<li class="nav-item {{ Request::is('orders') ? 'active' : '' }}">
+                        <a href="/orders?skip=0" class="nav-link">Заказы</a>
+                    </li>-->
                 </ul>
                 <ul class="navbar-nav nav-flex-icons">
                     <li class="nav-item">
