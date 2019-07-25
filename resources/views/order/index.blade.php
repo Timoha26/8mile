@@ -22,7 +22,7 @@
                             {{ $order->customer_name }} <span class="text-muted">{{ $order->customer_phone }}</span>
                         </div>
                         <div class="float-sm-right float-lg-left col-sm-6 col-lg-12 text-right text-muted">
-                            <small>{{ \Carbon\Carbon::parse($order->created_at)->format('d.m.Y H:i:s') }}</small>
+                            <small>{{ \Carbon\Carbon::parse($order->created_at)->timezone('Asia/Krasnoyarsk')->format('d.m.Y H:i:s') }}</small>
                         </div>
                     </div>
                     <div class="float-sm-left float-lg-none col-sm-12 col-lg-8 text-body">
